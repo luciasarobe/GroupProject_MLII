@@ -8,10 +8,15 @@ def main():
         layout="wide"
     )
 
-    # Logo and Title
+    # Logo and Title section
     col_logo, col_text = st.columns([1, 3])
+
     with col_logo:
-        st.image("logo.jpg", width=250)  # Direct path since it's in the same folder
+        logo_path = os.path.join(os.path.dirname(__file__), "logo.jpg")
+        if os.path.exists(logo_path):
+            st.image("logo.jpg", width=250)
+        else:
+            st.warning("⚠️ Logo not found.")
 
     with col_text:
         st.markdown("<br>", unsafe_allow_html=True)
