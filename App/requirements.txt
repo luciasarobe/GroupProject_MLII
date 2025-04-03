@@ -1,11 +1,11 @@
 fitz==0.0.1.dev2
 langchain==0.3.22
+langchain-google-genai==2.1.2
+google-generativeai==0.6.0
 pandas==2.2.3
 requests==2.32.3
 streamlit==1.44.1
-protobuf==3.20.3
-google-generativeai
-langchain-google-genai
+PyMuPDF==1.23.22
 
 
 
