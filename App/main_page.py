@@ -11,7 +11,7 @@ def main():
     # Logo and Title
     col_logo, col_text = st.columns([1, 3])
     with col_logo:
-        st.image("App\logo.jpg", width=250)  # Direct path since it's in the same folder
+        st.image("logo.jpg", width=250)  # Direct path since it's in the same folder
 
     with col_text:
         st.markdown("<br>", unsafe_allow_html=True)
