@@ -12,14 +12,15 @@ def main():
     col_logo, col_text = st.columns([1, 3])
 
     with col_logo:
-        logo_path = os.path.join(os.path.dirname(__file__), "logo.jpg")
-        if os.path.exists(logo_path):
+        # Display logo safely on both local and Streamlit Cloud
+        try:
             st.image("logo.jpg", width=250)
-        else:
-            st.warning("⚠️ Logo not found.")
+        except FileNotFoundError:
+            st.warning("⚠️ Logo image not found.")
 
     with col_text:
         st.markdown("<br>", unsafe_allow_html=True)
+
 
     # Welcome Message
     st.markdown("""
