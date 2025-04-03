@@ -2,6 +2,5 @@ fitz==0.0.1.dev2
 langchain==0.3.22
 langchain_google_genai==2.1.2
 pandas==2.2.3
-protobuf==6.30.2
 Requests==2.32.3
 streamlit==1.44.1
