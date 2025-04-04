@@ -1,0 +1,11 @@
+fitz
+langchain
+langchain-google-genai
+google-generativeai
+pandas
+requests
+streamlit
+PyMuPDF
+
+
+
